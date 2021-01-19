@@ -24,19 +24,14 @@
       </div>
       
       <div class="pdfv-control">
-        <button (click)="renderText = !renderText">Render Text</button>
-      </div>
-      <div class="pdfv-control">
-        <button (click)="zoomOut()">-</button>&nbsp;&nbsp;<button (click)="zoomIn()">+</button>&nbsp;
-      
-      </div>
-      <div class="pdfv-control">
-        zoom-scale
-        <select name="zoomScales" [(ngModel)]="zoomScale">
-          <option [value]="o" *ngFor="let o of zoomScales">{{o}}</option>
-        </select>
+        <button (click)="downloadPdf()">Download PDF</button>
       </div>
 
+      <div class="pdfv-control">
+        <button (click)="zoomOut()">ZoomOut</button>&nbsp;&nbsp;<button (click)="zoomIn()">ZoomIn</button>&nbsp;
+      
+      </div>
+      
       <div class="pdfv-control">
         <button (click)="rotateDoc()">🔄</button>&nbsp;
         Rotation 

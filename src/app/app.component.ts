@@ -2,6 +2,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { PdfViewerComponent } from 'ng2-pdf-viewer';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,7 +10,7 @@ import { PdfViewerComponent } from 'ng2-pdf-viewer';
 })
 export class AppComponent {
   title = 'angular-pdf-viewer-app';
-  pdfSrc="";
+  pdfSrc="";  
 
   @ViewChild(PdfViewerComponent) 
   renderText = true;
@@ -39,6 +40,8 @@ export class AppComponent {
   rotateDoc() {
     this.rotation += 90;
   }
+
+  downloadPdf(){}
 
 
   // Event handler when new PDF file is selected

@@ -14,6 +14,7 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     FormsModule,
     BrowserModule,
     PdfViewerModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
